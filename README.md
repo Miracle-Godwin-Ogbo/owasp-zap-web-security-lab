@@ -3,20 +3,18 @@
 ## Objective
 To identify security vulnerabilities in a web application using automated scanning techniques with OWASP ZAP.
 
----
 
 ## Scope
 - Target: http://192.168.222.129:3000 (OWASP Juice Shop)
 - Environment: Local lab (Docker on Kali Linux)
 
----
+
 ### Tools Used
 - OWASP ZAP (Web Application Security Scanner)  
 - Kali Linux (Penetration Testing OS)  
 - OWASP Juice Shop (Intentionally Vulnerable Web App)  
 - Firefox Browser (Proxy Configuration)  
 
----
 
 ## Methodology
 
@@ -27,13 +25,11 @@ The assessment followed a structured approach:
 3. Active vulnerability scanning  
 4. Analysis of identified issues  
 
----
 
 ##  Target Setup
 
 The target application was hosted locally and accessed via its internal network IP address.
 
----
 
 ### Spidering Phase
 
@@ -42,7 +38,6 @@ The application was crawled to identify accessible pages and endpoints.
 
 ![Spider](screenshots_spider.png)
 
----
 
 ##  Active Scan
 
@@ -52,7 +47,6 @@ An automated active scan was performed to test input vectors and application res
 ### Output
 ![Active Scan](screenshots_active_scan.png)
 
----
 
 ##  Alerts & Vulnerability Analysis
 
@@ -62,7 +56,6 @@ To review and analyze vulnerabilities detected during the scan.
 ### Output
 ![Alerts](screenshots_alerts.png)
 
----
 
 ### Example Vulnerability: SQL Injection & Cross-Site Scripting (XSS) 
 
@@ -72,7 +65,6 @@ A potential Cross-Site Scripting (XSS) vulnerability was identified, which could
 ![SQL Vulnerability](screenshots_SQL_vulnerability.png)
 ![XSS Vulnerability](screenshots_XSS_vulnerability.png)
 
----
 
 ## Findings
 
@@ -85,9 +77,8 @@ The assessment was aligned with the OWASP Top 10, including:
 - Injection flaws (SQLi, XSS)  
 - Security misconfiguration  
 - Broken access control  
-- Sensitive data exposure  
-
----
+- Sensitive data exposure
+  
 
 ## Risk Analysis
 
@@ -96,7 +87,6 @@ Identified vulnerabilities could allow attackers to:
 - Access sensitive information  
 - Exploit misconfigurations  
 
----
 
 ## Mitigation
 
@@ -105,7 +95,6 @@ Identified vulnerabilities could allow attackers to:
 - Regularly test and patch vulnerabilities  
 - Follow secure coding practices  
 
----
 
 ## Conclusion
 
